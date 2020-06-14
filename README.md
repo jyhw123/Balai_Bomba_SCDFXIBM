@@ -30,7 +30,7 @@ If all the steps in the set up below are completed correctly, the simulated devi
 ## d) Link to detailed solution
 You can find our detailed report [here]()! 
 
-A more detailed write up on our Node-RED flow can be found [here]()
+A more detailed write up on our Node-RED flow can be found [here](/General flow of Node-Red_Final.pdf)
 
 ## e) Project Roadmap
 Check out our 2020 Roadmap below:
