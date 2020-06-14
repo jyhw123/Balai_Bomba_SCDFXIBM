@@ -11,11 +11,11 @@ You can find our video [here](https://pip.pypa.io/en/stable/)!
 
 ## c) Architecture of our proposed solution
 
-Our architecture consists of 3 main sections, the device/sensor suite at each chute system, the cloud services, and the integration with our community.
+Our architecture consists of 3 main sections, the device/sensor suite at each refuse chute system, the IBM cloud services, and the integration with our community.
 
 ![architecture](https://user-images.githubusercontent.com/60395624/84583784-3854d100-ae2f-11ea-899c-cad531973edd.jpg)
 
-If all the steps in the set up below are completed correctly, the simulated device should now be sending temperature, and smoke data to the Node-RED flow. This data can then be visualised using the Node-RED dashboard, and is also stored in the two Cloudant databases, “yesfire” and “nonfire” which should be automatically created under the Cloudant platform. When the data being sent indicates a fire in a chute device, a tweet will be sent out automatically, along with directions via Google Maps to the fire. The data could then be sent to the MyResponder App as well. In this way, we are able to utilise IoT 
+If all the steps in the set up below are completed correctly, the simulated device should now be sending temperature, and smoke data to the Cloud, and to the Node-RED flow. This data can then be visualised using the Node-RED dashboard, and is also stored in the two Cloudant databases, “yesfire” and “nonfire” which should be automatically created under the Cloudant platform. When the data being sent indicates a fire in a chute device, a tweet will be sent out automatically, along with directions via Google Maps to the fire. The data could then be sent to the MyResponder App as well. In this way, we are able to utilise IoT 
 
 ## d) Link to detailed solution
 You can find our detailed report [here]()! Included in the document is our project roadmap/proposed timeline.
@@ -147,7 +147,11 @@ If all the above steps are completed correctly, the simulated device should now 
 In case you had issues with any of the above steps, you can view our tests of the product [here]().
 
 ## i) Built with the following technologies
-- IBM Cloudant
-- IBM Watson IoT Platform
-- IBM Node-RED
-- Twitter Developer
+- [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results)
+  - Generating of database
+- [IBM Watson IoT Platform](https://cloud.ibm.com/catalog/services/internet-of-things-platform)
+  - Simulting data sent to Node-RED Platform
+- [IBM Node-RED](https://cloud.ibm.com/catalog?search=node-red#search_results)
+  - Connection with IoT devices
+- [Twitter Developer](https://developer.twitter.com/en)
+  - Generating of Twitter API keys and authentication tokens
