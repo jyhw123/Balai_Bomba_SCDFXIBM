@@ -65,20 +65,20 @@ Repeat step 3, two more times, with the two code blocks below:
 Your troublechute_id_database should now have 3 documents in it. If this project goes into production, this database would include the ID's of all Rubbish Chutes in HDB flats, with their corresponding physical addresses. 
 
 #### Step 5: Get Service Credentials
-Go to Resource List -> Services, and click on the Cloudant service that was started. Click on the ‘Service credentials’ side tab, there should be a set of credentials created. Click on the copy icon next to it, and paste the output on a text editor. The result should look like this:
+Go to Resource List -> Services, and click on the Cloudant service that was started. Click on the ‘Service credentials’ side tab, there should be a set of credentials created. Click on the copy icon next to it, and paste the output on a text editor. The result should look like this (some values have been omitted/changed for privacy):
 
 ```bash
 {
   "apikey": "bq7Y5Yp1_g8_ku0JaoJuKpypfmjrYwTLAMgqu68ZCSlU",
-  "host": "a88c241a-abbb-4e63-b84c-6d744abc030c-bluemix.cloudantnosqldb.appdomain.cloud",
-  "iam_apikey_description": "Auto-generated for key dce751b5-fa9f-4e46-9f17-869c9e781d21",
-  "iam_apikey_name": "f1a8c065-ec43-4414-9946-215d7a9bac7c",
+  "host": "a88c241a-abbb-4e63-b76c-6d755abc030c-bluemix.cloudantnosqldb.appdomain.cloud",
+  "iam_apikey_description": "Auto-generated for key dce751xx-fa9f-4e46-9f17-8xxc9e781d21",
+  "iam_apikey_name": "f1a8c065-ec43-4414-9946-215dxxxbac7c",
   "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
   "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/9a451e4dcf4c4bcf8bbeafe9a81cbfb8::serviceid:ServiceId-12753bc4-d12b-4929-9ab5-fcf34cb225ae",
-  "password": "2ff52c1f65a2ba9a674b0028608256bec1161a11afbc6e020cc9eb1a0c0d4a68",
+  "password": "2ff52c1f65a2ba9a674b0025476256bec1161a11afbc6e020cc9eb1a0c0d4a68",
   "port": 443,
-  "url": "https://a88c241a-abbb-4e63-b84c-6d744abc030c-bluemix:2ff52c1f65a2ba9a674b0028608256bec1161a11afbc6e020cc9eb1a0c0d4a68@a88c241a-abbb-4e63-b84c-6d744abc030c-bluemix.cloudantnosqldb.appdomain.cloud",
-  "username": "a88c241a-abbb-4e63-b84c-6d744abc030c-bluemix"
+  "url": "https://a88c241a-abbb-4e63-b76c-6d755abc030c-bluemix:2ff52c1f65a2ba9a674b0028608256bec1161a11afbc6e020cc9eb1a0c0d4a68@a88c241a-abbb-4e63-b84c-6d744abc030c-bluemix.cloudantnosqldb.appdomain.cloud",
+  "username": "a88c241a-abbb-4e63-b76c-6d755abc030c-bluemix"
 }
 ```
 Note down “host”, “password”, and “username”. We will need these credentials to ensure that the simulated device data can be stored in the Cloudant database via the Node-RED flow.
