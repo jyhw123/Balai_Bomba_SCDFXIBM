@@ -28,7 +28,7 @@ Our architecture consists of 3 main sections, the device/sensor suite at each re
 If all the steps in the set up below are completed correctly, the simulated device should now be sending temperature, and smoke data to the Cloud, and to the Node-RED flow. This data can then be visualised using the Node-RED dashboard, and is also stored in the two Cloudant databases, “yesfire” and “nonfire” which should be automatically created under the Cloudant platform. When the data being sent indicates a fire in a chute device, a tweet will be sent out automatically, along with directions via Google Maps to the fire. The data could then be sent to the MyResponder App as well. In this way, we are able to utilise IoT 
 
 ## d) Link to detailed solution
-You can find our detailed report [here]()! 
+You can find our detailed report [here](https://github.com/jyhw123/ReBombas_SCDFXIBM/blob/master/Final_detailed_solution.pdf)! 
 
 A more detailed write up on our Node-RED flow can be found [here](https://github.com/jyhw123/ReBombas_SCDFXIBM/blob/master/General%20flow%20of%20Node-Red_Final.pdf)
 
