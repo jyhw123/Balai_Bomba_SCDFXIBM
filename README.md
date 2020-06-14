@@ -12,7 +12,9 @@ You can find our video [here](https://pip.pypa.io/en/stable/)!
 
 Our architecture consists of 3 main sections, the device/sensor suite at each chute system, the cloud services, and the integration with our community.
 
-![image](architecture.pdf)
+![architecture](https://user-images.githubusercontent.com/60395624/84583784-3854d100-ae2f-11ea-899c-cad531973edd.jpg)
+
+
 ```python
 import foobar
 
