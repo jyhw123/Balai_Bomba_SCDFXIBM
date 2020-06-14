@@ -5,6 +5,16 @@ Hi there! We are a group of incoming year 2 students studying under the Renaissa
 
 Our team consists of Mei Jie, Wan Yi, Daryl, Shaun, and Julian! We have diverse interests and different specialisations, but are united in our desire for change.
 
+### The Problem: 
+Rubbish chute fires form the bulk of residential fires and make up more than 20% of all reported fires that occur. Annually, SCDF has to respond to more than 1,000 of such cases, placing an unnecessary strain on scarce emergency resources. 
+
+### How Technology Can Help: 
+As these fires are minor and of low risk, the use of automation as well as timing and outreach enhancements while tapping on the network of Community First Responders (CFRs) and the general public could be made to further relieve the need to activate precious emergency resources. By automating the process of responding to such cases, we are able to create a system that reduces or even eliminates the need for SCDF to engage their Ops Centre and deploy their emergency response resources. 
+
+### Our Idea: 
+Our team seeks to adopt a multi-pronged approach to tackle rubbish chute fires. By using smoke and heat sensors located inside the rubbish chute that are positioned near the ground floor to detect possible fires, our smart system will first activate the flushing system already present in all chutes as part of cleaning processes. Should the fire continue to persist, our smart system will then automatically create a case in the existing MyResponder app as well as post an alert on social media channels to enhance outreach to the community. This way, members of the public in close proximity would be able to respond quickly to the rubbish chute fires and assist in putting out the flames.
+
+
 ## b) Pitch Video
 
 You can find our video [here](https://pip.pypa.io/en/stable/)!
@@ -18,7 +28,9 @@ Our architecture consists of 3 main sections, the device/sensor suite at each re
 If all the steps in the set up below are completed correctly, the simulated device should now be sending temperature, and smoke data to the Cloud, and to the Node-RED flow. This data can then be visualised using the Node-RED dashboard, and is also stored in the two Cloudant databases, “yesfire” and “nonfire” which should be automatically created under the Cloudant platform. When the data being sent indicates a fire in a chute device, a tweet will be sent out automatically, along with directions via Google Maps to the fire. The data could then be sent to the MyResponder App as well. In this way, we are able to utilise IoT 
 
 ## d) Link to detailed solution
-You can find our detailed report [here]()! Included in the document is our project roadmap/proposed timeline.
+You can find our detailed report [here]()! 
+
+A more detailed write up on our Node-RED flow can be found [here]()
 
 ## e) Project Roadmap
 Check out our 2020 Roadmap below:
