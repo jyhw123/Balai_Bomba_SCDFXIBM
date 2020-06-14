@@ -15,6 +15,8 @@ Our architecture consists of 3 main sections, the device/sensor suite at each ch
 
 ![architecture](https://user-images.githubusercontent.com/60395624/84583784-3854d100-ae2f-11ea-899c-cad531973edd.jpg)
 
+If all the steps in the set up below are completed correctly, the simulated device should now be sending temperature, and smoke data to the Node-RED flow. This data can then be visualised using the Node-RED dashboard, and is also stored in the two Cloudant databases, “yesfire” and “nonfire” which should be automatically created under the Cloudant platform. When the data being sent indicates a fire in a chute device, a tweet will be sent out automatically, along with directions via Google Maps to the fire. The data could then be sent to the MyResponder App as well. In this way, we are able to utilise IoT 
+
 ## d) Link to detailed solution
 You can find our detailed report [here]()! Included in the document is our project roadmap/proposed timeline.
 
@@ -131,7 +133,7 @@ Return back to Resource List -> Apps -> Node RED TroubleChute app. Open the Node
 #### Step 7: Ensure that all nodes have the correct settings
 In order for the simulated device to send data over to the Node-RED Flow, Cloudant, and Twitter we need to set a few settings.
 ##### IBM IoT App In Node
-Authentication mode should be API Key. Edit the TempSensor_API API Key and input the API Key and Token generated above on the IBM Watson IoT Platform. The Device Type should be set to “TempSensor”, and the Device Id should be set to “TempSensor_1”, in accordance to the simulated device created a few steps ago.
+Authentication mode should be API Key. Edit the TempSensor_API API Key and input the API Key and Token generated above on the IBM Watson IoT Platform. The Device Type should be set to “TempSensor”, and the Device Id should be set to “TempSensor_1”, in accordance to the simulated device created a few steps ago. The 'Event' field should be ticked.
 ##### Cloudant Nodes
 We will need the service credentials for the Cloudant Database that was generated a few steps above. After clicking on the “Cloudant Address Retrieval” node, follow the following steps: ‘Service’ field should be set to ‘External cloudant or couchdb service’. Edit the “Server” field, and input the host field as “https://<your host name generated above>”, input the Username field as the username generated above, and the password field as the password generated above. Then, the Database name should be “troublechute_id_address”, and we should search by _id. There are 2 Cloudant Address Retrieval nodes that need to be edited as above.
   
