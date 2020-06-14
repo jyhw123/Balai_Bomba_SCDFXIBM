@@ -17,7 +17,7 @@ Our team seeks to adopt a multi-pronged approach to tackle rubbish chute fires. 
 
 ## b) Pitch Video
 
-You can find our video [here](https://pip.pypa.io/en/stable/) or on the form!
+You can find our video [here](https://youtu.be/5R4U-0aKNOE) or on the form!
 
 ## c) Architecture of our proposed solution
 
