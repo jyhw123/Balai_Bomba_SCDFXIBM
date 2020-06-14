@@ -18,7 +18,8 @@ Our architecture consists of 3 main sections, the device/sensor suite at each ch
 You can find our detailed report [here]()! Included in the document is our project roadmap/proposed timeline.
 
 ## e) Project Roadmap
-Check it out in our detailed solution report above!
+Check out our 2020 Roadmap below:
+![Roadmap.pdf](https://github.com/jyhw123/ReBombas_SCDFXIBM/files/4776075/Roadmap.pdf)
 
 ## f) Getting Started
 
