@@ -59,6 +59,18 @@ Repeat step 3, two more times, with the two code blocks below:
 ```
 Your troublechute_id_database should now have 3 documents in it. If this project goes into production, this database would include the ID's of all Rubbish Chutes in HDB flats, with their corresponding physical addresses. 
 
+### Start a simulated device on IBM Watson IoT Platform
+We will create a device to simulate readings being sent from the temperature and smoke sensos at a chute. 
+
+#### Step 1: Create simulated device
+Return to the IBM Watson IoT Platform. Create a simulated device by going through the tutorial [here](https://cloud.ibm.com/docs/IoT?topic=IoT-sim_device_data#sim_device_data). Device type should be "TempSensor". Instead of specifying a event payload, upload a CSV file called "data_final.csv" included in this repo. Ensure to enable the "Loop simulated data from file" option. The schedule should be 1 every minute, but can be set to a higher frequency for testing purposes. Then press "Create Simulated Device".
+
+#### Step 2: Create API Key and Token
+Go to "Apps" in the sidebar, and then click on "Generate API Key". Set Role as "Device Application", then create the key, taking down the key and the token. 
+
+### Create Twitter Developer Account
+Proceed to this video [here](https://www.youtube.com/watch?v=vlvtqp44xoQ&list=LLeYMU2wNabnzmnxyOodTStA&index=2&t=0s), and take note of the API Key, API Secret Key, Access Token, and Access Token (secret). 
+
 ### Create a Node-RED application connected to an IoT Service
 This is where we'll import our Node-RED flow from the .json file included in our repo. 
 
@@ -71,33 +83,35 @@ Click on 'Catalog', then search for the Internet of Things Platform tile. Once t
 #### Step 3: Connect IoT Service to app
 Go to Resource List -> Apps -> Node RED TroubleChute app. Then, press 'connect existing services' to connect to the "Internet of Things Platform-TroubleChute" service
 
-#### Step 3: Deploy your Node-RED app.
-Head back to Resource List -> Apps -> Node RED TroubleChute app. Then, click on "Deploy your app". Press 'New' to create a new IBM Cloud API key. Leave the memory allocation as 128mb if on lite account, ensure region is Dallas. Click next, then ensure the DevOps toolchain name is "NodeREDTroubleChuteapp", with region as Dallas, and proceed. After a few moments, the status should be In Progress. Wait for the deploy stage to finish running.
+#### Step 4: Deploy your Node-RED app.
+Head back to Resource List -> Apps -> Node RED TroubleChute app. Then, click on "Deploy your app". Press 'New' to create a new IBM Cloud API key. Leave the memory allocation as 128mb if on lite account, ensure region is Dallas. Click next, then ensure the DevOps toolchain name is "NodeREDTroubleChuteapp", with region as Dallas, and proceed. After a few moments, the status should be In Progress. Wait for the deploy stage to finish running. 
 
-#### Step 4: Update dependences on the package.json file
+#### Step 5: Update dependences on the package.json file and install nodes
+Proceed to the App Source/Git page to edit the package.json file. Under the dependencies section, add the following three dependencies:
 
-
-
-### Start a simulated device on IBM Watson IoT Platform
-We will create a device to simulate readings being sent from the temperature and smoke sensos at a chute. 
-
-#### Step 1: Create simulated device
-Return to the IBM Watson IoT Platform. Create a simulated device by going through the tutorial [here](https://cloud.ibm.com/docs/IoT?topic=IoT-sim_device_data#sim_device_data). Device type should be "TempSensor"
-
-
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```bash
+{
+...,
+"node-red-contrib-scx-ibmiotapp": "0.x",
+"node-red-dashboard": "2.x",
+"node-red-node-twitter": "1.x"
+}
 ```
+Then, 
+#### Step 6: Import our Node-RED Flow
+Then open the Node-RED editor and secure it.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
+
+
+
+
+## 
+
+
+
+)
