@@ -156,7 +156,7 @@ For each of the two Twitter nodes, we will need to add new twitter-credentials, 
 If all the above steps are completed correctly, the simulated device should now be sending data to the Node-RED flow. This data can then be visualised using the Node-RED dashboard, and is also stored in the two Cloudant databases, “yesfire” and “nonfire” which should be automatically created under the Cloudant platform. When the data being sent indicates a fire in a chute device, a tweet will be sent out automatically, along with directions via Google Maps to the fire. The data could then be sent to the MyResponder App as well. 
 
 ## g) Running the tests
-In case you had issues with any of the above steps, you can view our tests of the product [here]().
+In case you had issues with any of the above steps, you can view our tests of the product [here](https://docs.google.com/document/d/1Dl3C87ezS__gmBevyy4jV2Zk-fEssrDarwYBm0CmIOI/edit?usp=sharing).
 
 ## i) Built with the following technologies
 - [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results)
