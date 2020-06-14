@@ -40,7 +40,7 @@ Head to 'Catalog' in the top navigation bar and search for Cloudant. Choose Dall
 Go to your resource list and click on the Cloudant-TroubleChute service, and then click on the 'Launch Dashboard' button. Once on the Cloudant Dashboard platform, click on 'Create Database' on the top navigation bar. Name this database "troublechute_id_address", and choose Non-partitioned, then create. 
 
 #### Step 3: Add an entry into the Database
-Create a new doc by clicking on the '+' icon next to 'All Documents'. Then, delete any entries in the document, and the code below into the document:
+Create a new doc by clicking on the '+' icon next to 'All Documents'. Then, delete the entries in the document, and add in the code below into the document:
 ```bash
 {
   "_id": "TempSensor_1",
