@@ -19,7 +19,8 @@ You can find our detailed report [here]()! Included in the document is our proje
 
 ## e) Project Roadmap
 Check out our 2020 Roadmap below:
-![Roadmap.pdf](https://github.com/jyhw123/ReBombas_SCDFXIBM/files/4776075/Roadmap.pdf)
+
+![Roadmap.pdf](Roadmap.pdf)
 
 ## f) Getting Started
 
